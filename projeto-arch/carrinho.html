@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho Arch</title>
+    <link rel="stylesheet" href="./estilos/gobal.css" />
+    <link rel="stylesheet" href="./estilos/style.css" />
+  </head>
+  <body id="escuro">
+    <header class="header">
+      <div>
+        <a href="./index.html"
+          ><img class="img-logo" src="img/logo.svg" alt="arch"
+        /></a>
+        <img
+          id="switch"
+          onclick="escuro()"
+          class="img-botao-modo-claro"
+          src="img/modo-claro.svg"
+          alt="botão para trocar do modo claro para escuro"
+          height="45px"
+          width="45px"
+        />
+        <img
+          id="imagem"
+          class="img-sol"
+          src="img/sol.svg"
+          alt="sol indica o modo claro"
+          height="26x"
+          width="26px"
+        />
+        <ul class="nav-contato">
+          <li><a href="contato">CONTATO</a></li>
+        </ul>
+      </div>
+      <div class="detalhe"></div>
+    </header>
+    <main>
+      <div class="carrinho-topo">
+        <img id="c-vitrini" class="carrinho-img" src="./img/carrinho.svg" />
+        <h1 class="titulo-carrinho">CARRINHO</h1>
+      </div>
+      <div class="vitrini-carrinho">
+        <section class="flex-carrinho">
+          <img
+            src="https://m.media-amazon.com/images/I/51jWQNDFfIL._AC_SL1000_.jpg"
+            width="120px"
+            height="120px"
+          />
+          <h2>Caneca yoda baby</h2>
+          <p class="preco-carrinho">R$ 60,00</p>
+          <div class="botoes">
+            <button class="adicionar-mais" type="button">+</button>
+            <button class="retirar" type="button">-</button>
+          </div>
+        </section>
+        <section class="flex-carrinho">
+          <img
+            src="https://m.media-amazon.com/images/I/41sb2kVLViL._AC_SX466_.jpg"
+            width="120px"
+            height="120px"
+          />
+          <h2>Camisa Developer</h2>
+          <p class="preco-carrinho">R$ 70,00</p>
+          <div class="botoes">
+            <button class="adicionar-mais" type="button">+</button>
+            <button class="retirar" type="button">-</button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-grid">
+        <h3>Contato</h3>
+        <div class="contato-email">
+          <img
+            class="img-carta"
+            src="./img/carta.svg"
+            width="28px"
+            height="28px"
+          />
+          <p class="email">contato@contato.com</p>
+        </div>
+        <div class="contato-telefone">
+          <img
+            class="img-telefone"
+            src="./img/telefone.svg"
+            width="28px"
+            height="28px"
+          />
+          <p class="telefone">(11) 1234-6580 SAC</p>
+        </div>
+        <ul class="redes-sociais">
+          <li>
+            <a target="blank" href="https://www.whatsapp.com/?lang=pt_br"
+              ><img src="./img/whatsapp.svg" alt="whatsapp"
+            /></a>
+          </li>
+          <li>
+            <a target="black" href="https://www.instagram.com/"
+              ><img src="./img/instagram.svg" alt="instagram"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <p class="direitos">Todos direitos reservados</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

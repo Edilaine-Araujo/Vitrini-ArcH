@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja ArcH</title>
+    <link rel="stylesheet" href="./estilos/style.css" />
+    <link rel="stylesheet" href="./estilos/gobal.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="escuro">
+    <header class="header">
+      <div>
+        <a href="./index.html"><img class="img-logo" src="img/logo.svg" alt="arch" /></a>
+        <img onclick="escuro()"
+          id="switch"
+          class="img-botao-modo-claro"
+          src="img/modo-claro.svg"
+          alt="botão para trocar do modo claro para escuro"
+          height="45px"
+          width="45px"
+        />
+        <img
+          id="imagem"
+          class="img-sol"
+          src="img/sol.svg"
+          alt="sol indica o modo claro"
+          height="26x"
+          width="26px"
+        />
+        <ul class="nav-contato">
+          <li><a href="#contato">CONTATO</a></li>
+        </ul>
+      </div>
+      <div class="detalhe"></div>
+    </header>
+    <main>
+      <div class="carrinho-vitrini">
+       <a href="./carrinho.html"><img id="c-vitrini" class="carrinho-compras"
+          src="./img/carrinho.svg"
+          alt="carrinho"
+          height="30px"
+          width="30px"
+        /></a> 
+        <span class="contador"> <p class="num">2<p></span>
+      </div>
+      <div class="grid" id="colecao-itens">
+        <div class="lista-produtos">
+          <ul class="lista">
+            <h1>Produtos</h1>
+            <li onclick='filtro("Cadeira")'>Cadeiras</li>
+            <li onclick='filtro("Camisa")'>Camisas</li>
+            <li onclick='filtro("Caneca")'>Canecas</li>
+            <li onclick='filtro("Livro")'>Livros</li>
+          </ul>
+          <div class="botao-produtos">
+            <button onclick="modalOn()" type="button" class="adc-novo-item">Adicionar novo item</button>
+          </div>
+        </div>
+      </div>
+      <div id="meu-modal">
+        <button id="fechar" onclick="modalOff()">Sair</button>
+        <h2>ADICIONE UM NOVO ITEM</h2>
+        <form action="post" class="formulario">
+          <label for="titulo">Titulo</label>
+          <input id="titulo-m" type="text">
+          <label for="imagem">URL da imagem</label>
+          <input id="imagem-m" type="text">
+          <label for="descricao">Descrição</label>
+          <input id="descricao-m" type="text">
+          <label for="preco">Preço</label>
+          <input id="preco-m" type="text">
+          <label for="categoria">Categoria</label>
+          <select id=selecao>
+            <option value="" >Selecione a categoria</option>
+            <option value="Cadeira" >Cadeira</option>
+            <option value="Camisa" >Camisas</option>
+            <option value="Caneca" >Canecas</option>
+            <option value="Livro" >Livros</option>
+          </select>
+          <button type="button" class="adc" onclick="adcItem()">Adicionar</button>
+        </form>
+      </div>
+    </main>
+    <!-- <nav class="troca-pag">
+      <p class="pag-ant">Pagina anterior</p>
+      <ol class="n-pag">
+        <li>1</li>
+        <li>2</li>
+      </ol>
+      <p class="prox-pag">Próxima pagina</p> -->
+    </nav>
+    <footer class="footer">
+      <div class="footer-grid">
+        <h3 id="contato" >Contato</h3>
+        <div class="contato-email">
+          <img
+            class="img-carta"
+            src="./img/carta.svg"
+            width="28px"
+            height="28px"
+          />
+          <p class="email">contato@contato.com</p>
+        </div>
+        <div class="contato-telefone">
+          <img
+            class="img-telefone"
+            src="./img/telefone.svg"
+            width="28px"
+            height="28px"
+          />
+          <p class="telefone">(11) 1234-6580 SAC</p>
+        </div>
+        <ul class="redes-sociais">
+          <li>
+            <a target="blank" href="https://www.whatsapp.com/?lang=pt_br"
+              ><img class="rede" src="./img/whatsapp.svg" alt="whatsapp"
+            /></a>
+          </li>
+          <li>
+            <a  target="black" href="https://www.instagram.com/"
+              ><img class="rede" src="./img/instagram.svg" alt="instagram"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <p class="direitos">Todos direitos reservados</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

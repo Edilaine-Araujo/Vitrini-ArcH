@@ -1,0 +1,112 @@
+
+/* ESTILIZAÇÃO PADRÃO */
+
+:root {
+  --cor-background-header: #FF7A00;
+  --cor-texto-header: #000;
+  --cor-detalhe-header: #000;
+  --cor-background-footer: #FF7A00;
+  --cor-texto-footer: #000;
+  --cor-background-botao: #FF7A00;
+  --cor-numero-carrinho: #fff;
+  --background-n-carrinho: #E20000;
+  --cor-adc: #00E232;
+  --cor-remover: #E20000;
+  --cor-detalhe-rodape: #000;
+  --cor-texto-rodape: #fff;
+  --cor-borda: #817F7F;
+  --cor-borda-troca-pag: #FF7A00;
+}
+
+/* FONTES */
+
+:root {
+  --fonte-numeros: arial;
+  --fonte-letras: 'Poppins', sans-serif;
+}
+
+/* TAMANHOS */
+
+:root {
+  --border-radius: 6px;
+  --size-header: 1.20rem;
+  --size-footer: 4.50rem;
+  --size-text: 1.10rem;
+  --size-preco: 1.50rem;
+  --size-titulo-item: 1.50rem;
+  --size-descricao: 0.95rem;
+}
+
+
+/* MODO CLARO */
+
+:root {
+  --cor-texto-modo-claro: #303030;
+  --background-modo-claro: #fff;
+}
+
+/* MODO ESCURO */
+
+:root {
+  --background-modo-escuro: #303030;
+  --cor-texto-modo-escuro: #DDDDDD;
+}
+
+.dark {
+  background-color: var(--background-modo-escuro);
+  color: var(--cor-texto-modo-escuro);  
+}
+
+
+
+
+/* ESTILIZAÇÃO PADRÃO DE CADA ITEM DE COMPRA  */
+
+[modo-claro] {
+  background-color: var(--background-modo-claro);
+  color: var(--cor-texto-modo-claro);
+}
+
+[item-compra] {
+  font-size: var(--size-text);
+  border: 1.20px solid var(--cor-borda);
+  border-radius: var(--border-radius);
+}
+
+[dimensao-img] {
+  width: 12.50rem;
+  height: 12.50rem;
+  padding: 0.50rem;
+}
+
+[titulo] {
+  font-size: var(--size-titulo-item);
+  text-align: center;
+  padding: 1rem;
+}
+
+[descricao] {
+  font-size: var(--size-descricao);
+  text-align: center;
+  display: inline-block;
+  height: 50px;
+  padding: 0.50rem;
+}
+
+[preco] {
+  font-size: var(--size-preco);
+  font-weight: bold;
+  text-align: center;
+  padding: 0.30rem;
+}
+
+[botao-adc-carrinho] {
+  font-size: var(--size-descricao);
+  background-color: var(--cor-background-botao);
+  text-align: center;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  padding: 0.30rem 1rem 0.30rem 1rem;
+  margin-bottom: 10px;
+}
+
